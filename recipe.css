@@ -1,0 +1,182 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Intro Section */
+.intro {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    margin-bottom: 10px;
+}
+
+/* Key Information Section */
+.key-info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.key-info p {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+/* Ingredients Section */
+.ingredients {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ingredients h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.ingredients ul {
+    list-style: none;
+}
+
+.ingredients li {
+    margin-bottom: 5px;
+}
+
+/* Instructions Section */
+.instructions {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.instructions h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.instructions ol {
+    list-style: decimal inside;
+}
+
+.instructions li {
+    margin-bottom: 10px;
+}
+
+/* Nutrition Section */
+.nutrition {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nutrition h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.nutrition p {
+    text-align: center;
+}
+
+/* User Engagement Section */
+.user-engagement {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-engagement h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Call to Action Section */
+.cta {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cta button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.cta button:hover {
+    background-color: #218838;
+}
+
+/* Related Recipes Section */
+.related-recipes {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.related-recipes h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin-bottom: 5px;
+}

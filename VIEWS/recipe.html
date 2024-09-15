@@ -4,72 +4,100 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recipe Title</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/PUBLIC/CSS/recipe.css" />
   </head>
   <body>
     <header>
-      <h1>Recipe Title</h1>
-      <img src="recipe-image.jpg" alt="Image of the dish" />
+      <div class="logo">FarmToTable</div>
+      <nav>
+        <ul>
+          <li><a href="/VIEWS/index.html">Home</a></li>
+          <li><a href="/VIEWS/recipe.html">Recipes</a></li>
+          <li><a href="/VIEWS/about.html">About Us</a></li>
+          <li><a href="/VIEWS/contact.html">Contact Us</a></li>
+          <li><a href="/VIEWS/blog.html">Blog</a></li>
+        </ul>
+      </nav>
     </header>
+    <main>
+      <section class="title">
+        <h1>Recipe Title</h1>
+        <img src="/PUBLIC/IMAGES/recipe.jpg" alt="Image of the dish" />
+      </section>
 
-    <section class="intro">
-      <p>
-        Brief description of the recipe. Why it's special, any interesting
-        background.
-      </p>
-      <p>Author's note or personal touch about the recipe.</p>
-    </section>
+      <section class="intro">
+        <p>
+          Brief description of the recipe. Why it's special, any interesting
+          background.
+        </p>
+        <p>Author's note or personal touch about the recipe.</p>
+      </section>
 
-    <section class="key-info">
-      <p><strong>Prep Time:</strong> 20 minutes</p>
-      <p><strong>Cook Time:</strong> 40 minutes</p>
-      <p><strong>Total Time:</strong> 1 hour</p>
-      <p><strong>Servings:</strong> 4</p>
-      <p><strong>Difficulty:</strong> Easy</p>
-    </section>
+      <section class="key-info">
+        <p><strong>Prep Time:</strong> 20 minutes</p>
+        <p><strong>Cook Time:</strong> 40 minutes</p>
+        <p><strong>Total Time:</strong> 1 hour</p>
+        <p><strong>Servings:</strong> 4</p>
+        <p><strong>Difficulty:</strong> Easy</p>
+      </section>
 
-    <section class="ingredients">
-      <h2>Ingredients</h2>
-      <ul>
-        <li>1 cup of local fresh tomatoes</li>
-        <li>2 tablespoons of olive oil</li>
-        <!-- More ingredients -->
-      </ul>
-    </section>
+      <section class="ingredients">
+        <h2>Ingredients</h2>
+        <ul>
+          <li>1 cup of local fresh tomatoes</li>
+          <li>2 tablespoons of olive oil</li>
+          <!-- More ingredients -->
+        </ul>
+      </section>
 
-    <section class="instructions">
-      <h2>Instructions</h2>
-      <ol>
-        <li>Step 1: Description of the step.</li>
-        <li>Step 2: Description of the step.</li>
-        <!-- More steps -->
-      </ol>
-    </section>
+      <section class="instructions">
+        <h2>Instructions</h2>
+        <ol>
+          <li>Step 1: Description of the step.</li>
+          <li>Step 2: Description of the step.</li>
+          <!-- More steps -->
+        </ol>
+      </section>
 
-    <section class="nutrition">
-      <h2>Nutrition Information</h2>
-      <p>Calories: 250 | Protein: 10g | Carbs: 30g | Fat: 10g</p>
-    </section>
+      <section class="nutrition">
+        <h2>Nutrition Information</h2>
+        <p>Calories: 250 | Protein: 10g | Carbs: 30g | Fat: 10g</p>
+      </section>
 
-    <section class="user-engagement">
-      <h2>Reviews</h2>
-      <!-- Section for user ratings and reviews -->
-    </section>
+      <section class="user-engagement">
+        <h2>Reviews</h2>
+        <!-- Section for user ratings and reviews -->
+      </section>
 
-    <section class="cta">
-      <button>Save Recipe</button>
-      <button>Print Recipe</button>
-      <button>Subscribe</button>
-    </section>
+      <section class="cta">
+        <button>Save Recipe</button>
+        <button>Print Recipe</button>
+        <button>Subscribe</button>
+      </section>
 
-    <section class="related-recipes">
-      <h2>Related Recipes</h2>
-      <!-- Links to related recipes -->
-    </section>
+      <section class="related-recipes">
+        <h2>Related Recipes</h2>
+        <!-- Links to related recipes -->
+      </section>
 
+      <div class="author-bio">
+        <p>Author Bio: A short bio of the author.</p>
+        <p>Contact Information: Ways to get in touch.</p>
+      </div>
+    </main>
     <footer>
-      <p>Author Bio: A short bio of the author.</p>
-      <p>Contact Information: Ways to get in touch.</p>
+      <div class="footer-links">
+        <a href="/VIEWS/index.html">Home</a>
+        <a href="/VIEWS/recipe.html">Recipes</a>
+        <a href="/VIEWS/about.html">About Us</a>
+        <a href="/VIEWS/contact.html">Contact Us</a>
+      </div>
+      <div class="footer-social">
+        <a href="#"><img src="facebook-icon.png" alt="Facebook" /></a>
+        <a href="#"><img src="twitter-icon.png" alt="Twitter" /></a>
+        <a href="#"><img src="instagram-icon.png" alt="Instagram" /></a>
+      </div>
+      <p>&copy; 2024 FarmToTable. All rights reserved.</p>
     </footer>
   </body>
 </html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Page</title>
+    <link rel="stylesheet" href="/PUBLIC/CSS/browse.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">FarmToTable</div>
+      <nav>
+        <ul>
+          <li><a href="/VIEWS/index.html">Home</a></li>
+          <li><a href="/VIEWS/browse.html">Browse</a></li>
+          <li><a href="/VIEWS/about.html">About Us</a></li>
+          <li><a href="/VIEWS/contact.html">Contact Us</a></li>
+          <li><a href="/VIEWS/blog.html">Blog</a></li>
+        </ul>
+      </nav>
+      <div class="search-bar">
+        <input type="text" placeholder="Search recipes..." />
+        <button>Search</button>
+      </div>
+    </header>
+
+    <section class="hero">
+      <img src="/PUBLIC/IMAGES/MAIN.jpg" alt="Delicious Dish" />
+      <div class="hero-content">
+        <h1>Discover Delicious Recipes Made with Local Produce</h1>
+        <p>
+          Explore our collection of recipes featuring fresh, locally sourced
+          ingredients.
+        </p>
+        <button class="cta">Browse Recipes</button>
+      </div>
+    </section>
+
+    <section class="categories">
+      <h2>Recipe Categories</h2>
+      <div class="category-list">
+        <div class="category-item">
+          <button>Breakfast</button>
+          <img src="/PUBLIC/IMAGES/breakfast.jpg" alt="Breakfast" />
+        </div>
+        <div class="category-item">
+          <button>Lunch</button>
+          <img src="/PUBLIC/IMAGES/lunch.jpg" alt="Lunch" />
+        </div>
+        <div class="category-item">
+          <button>Dinner</button>
+          <img src="/PUBLIC/IMAGES/dinner.jpg" alt="Dinner" />
+        </div>
+        <div class="category-item">
+          <button>Desserts</button>
+          <img src="/PUBLIC/IMAGES/dessert.jpg" alt="Desserts" />
+        </div>
+        <div class="category-item">
+          <button>Vegetarian</button>
+          <img src="/PUBLIC/IMAGES/vegan.jpg" alt="Vegetarian" />
+        </div>
+        <div class="category-item">
+          <button>Quick & Easy</button>
+          <img src="/PUBLIC/IMAGES/quick.jpg" alt="Quick & Easy" />
+        </div>
+      </div>
+    </section>
+
+    <section class="recipe-listings">
+      <h2>Our Recipes</h2>
+      <div class="recipes">
+        <div class="recipe-card">
+          <img src="/PUBLIC/IMAGES/4.jpg" alt="Recipe 3" />
+          <h3>Recipe Title 1</h3>
+          <p>Short description of Recipe 1.</p>
+          <div class="rating">★★★★☆</div>
+          <a href="/VIEWS/recipe.html" class="view-recipe">View Recipe</a>
+        </div>
+        <div class="recipe-card">
+          <img src="/PUBLIC/IMAGES/5.jpg" alt="Recipe 2" />
+          <h3>Recipe Title 1</h3>
+          <p>Short description of Recipe 2.</p>
+          <div class="rating">★★★★☆</div>
+          <a href="/VIEWS/recipe.html" class="view-recipe">View Recipe</a>
+        </div>
+        <div class="recipe-card">
+          <img src="/PUBLIC/IMAGES/6.jpg" alt="Recipe 3" />
+          <h3>Recipe Title 3</h3>
+          <p>Short description of Recipe 3.</p>
+          <div class="rating">★★★★☆</div>
+          <a href="/VIEWS/recipe.html" class="view-recipe">View Recipe</a>
+        </div>
+        <!-- Repeat for other recipes -->
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-links">
+        <a href="/VIEWS/index.html">Home</a>
+        <a href="/VIEWS/browse.html">Browse</a>
+        <a href="/VIEWS/about.html">About Us</a>
+        <a href="/VIEWS/contact.html">Contact Us</a>
+      </div>
+      <div class="footer-social">
+        <a href="#"><img src="facebook-icon.png" alt="Facebook" /></a>
+        <a href="#"><img src="twitter-icon.png" alt="Twitter" /></a>
+        <a href="#"><img src="instagram-icon.png" alt="Instagram" /></a>
+      </div>
+      <p>&copy; 2024 FarmToTable. All rights reserved.</p>
+    </footer>
+    <script src="/PUBLIC/JS/browse.js"></script>
+  </body>
+</html>

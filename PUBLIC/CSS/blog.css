@@ -1,4 +1,4 @@
-/* General Styles */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,43 +7,32 @@ body {
     background-color: #f8f8f8;
 }
 
-/* Header Styles */
 header {
-    background-color: #333;
-    color: white;
-    padding: 1rem 0;
-}
-
-header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-}
-
-.nav-links li {
-    display: inline;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
+    padding: 20px;
+    background-color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 24px;
     font-weight: bold;
+    color: #fff;
 }
 
-/* Hero Section Styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
 .hero {
     background: url('/PUBLIC/IMAGES/blog\ hero.jpg') no-repeat center center/cover;
     color: white;
@@ -60,7 +49,7 @@ header nav {
     font-size: 1.5rem;
 }
 
-/* Blog Articles Section Styles */
+
 .blog-articles {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -106,7 +95,7 @@ header nav {
     background: #555;
 }
 
-/* Footer Styles */
+
 footer {
     background-color: #333;
     color: #fff;

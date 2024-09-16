@@ -19,13 +19,14 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #fff;
+    background-color: #333;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
     font-size: 24px;
     font-weight: bold;
+    color: #fff;
 }
 
 nav ul {
@@ -36,7 +37,7 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #fff;
 }
 
 .title {
@@ -55,7 +56,7 @@ nav ul li a {
     border-radius: 10px;
 }
 
-/* Intro Section */
+
 .intro {
     text-align: center;
     margin-bottom: 20px;

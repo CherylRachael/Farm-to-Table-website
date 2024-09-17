@@ -1,0 +1,15 @@
+{
+  "name": "farm-to-table-website",
+  "version": "1.0.0",
+  "description": "Welcome to the Farm-to-Table Recipe Website, where we celebrate the joy of cooking with fresh, locally sourced produce. Our mission is to encourage sustainable and healthy eating by providing easy-to-follow recipes that highlight the flavors of seasonal, local ingredients.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}

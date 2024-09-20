@@ -4,14 +4,19 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
+    width: 100%;
+    height: 100%;
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
+    overflow-x: hidden;
 }
-main{
+
+main {
     padding: 20px;
+    min-height: calc(100vh - 80px); /* Adjust this value based on your header and footer heights */
 }
 
 header {
@@ -21,6 +26,8 @@ header {
     padding: 20px;
     background-color: #333;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    position: relative;
 }
 
 .logo {
@@ -40,6 +47,54 @@ nav ul li a {
     color: #fff;
 }
 
+/* Mobile Menu Styles */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    height: 2px;
+    width: 25px;
+    background: #fff;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+
 .title {
     text-align: center;
     margin-bottom: 20px;
@@ -52,10 +107,9 @@ nav ul li a {
 
 .title img {
     max-width: 100%;
-    height: 500px;
+    height: 600px;
     border-radius: 10px;
 }
-
 
 .intro {
     text-align: center;
@@ -66,10 +120,10 @@ nav ul li a {
     margin-bottom: 10px;
 }
 
-
 .key-info {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin-bottom: 20px;
     background-color: #fff;
     padding: 20px;
@@ -80,8 +134,8 @@ nav ul li a {
 .key-info p {
     margin-bottom: 5px;
     text-align: center;
+    flex: 1 1 100%;
 }
-
 
 .ingredients {
     margin-bottom: 20px;
@@ -104,7 +158,6 @@ nav ul li a {
     margin-bottom: 5px;
 }
 
-
 .instructions {
     margin-bottom: 20px;
     background-color: #fff;
@@ -126,7 +179,6 @@ nav ul li a {
     margin-bottom: 10px;
 }
 
-
 .nutrition {
     margin-bottom: 20px;
     background-color: #fff;
@@ -144,7 +196,6 @@ nav ul li a {
     text-align: center;
 }
 
-
 .user-engagement {
     margin-bottom: 20px;
     background-color: #fff;
@@ -157,7 +208,6 @@ nav ul li a {
     margin-bottom: 10px;
     text-align: center;
 }
-
 
 .cta {
     text-align: center;
@@ -179,7 +229,6 @@ nav ul li a {
     background-color: #218838;
 }
 
-
 .related-recipes {
     margin-bottom: 20px;
     background-color: #fff;
@@ -193,18 +242,20 @@ nav ul li a {
     text-align: center;
 }
 
-.author-bio{
+.author-bio {
     margin-bottom: 20px;
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 footer {
     background-color: #333;
     color: #fff;
     padding: 20px;
     text-align: center;
+    width: 100%;
 }
 
 .footer-links, .footer-social {
@@ -217,4 +268,38 @@ footer {
 .footer-links a, .footer-social a {
     color: #fff;
     text-decoration: none;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .title h1 {
+        font-size: 2em;
+    }
+
+    .key-info {
+        flex-direction: column;
+    }
+
+    .key-info p {
+        flex: 1 1 auto;
+    }
+
+    .cta button {
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title h1 {
+        font-size: 1.5em;
+    }
+
+    .key-info {
+        flex-direction: column;
+    }
+
+    .cta button {
+        padding: 8px 12px;
+        font-size: 0.9em;
+    }
 }

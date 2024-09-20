@@ -34,7 +34,7 @@ nav ul li a {
 }
 
 main {
-    background-image: url('/PUBLIC/IMAGES/about\ us.jpg');
+    background-image: url('/PUBLIC/IMAGES/about us.jpg');
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -43,7 +43,7 @@ main {
     background-color: #28a745;
     color: #fff;
     text-align: center;
-    max-width: 100%;
+    padding: 2rem 1rem;
 }
 
 .header h1 {
@@ -146,4 +146,62 @@ footer {
 .footer-links a, .footer-social a {
     color: #fff;
     text-decoration: none;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .team-member {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .team-member img {
+        margin-bottom: 10px;
+    }
+
+    section {
+        padding: 1rem;
+        margin: 0.5rem auto;
+    }
+
+    .cta-button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .header p {
+        font-size: 1rem;
+    }
+
+    .team-member h3 {
+        font-size: 1.2rem;
+    }
+
+    .team-member p {
+        font-size: 1rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    .cta-button {
+        padding: 0.5rem 1rem;
+    }
 }

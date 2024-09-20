@@ -1,4 +1,3 @@
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -34,7 +33,7 @@ nav ul li a {
 }
 
 .hero {
-    background: url('/PUBLIC/IMAGES/blog\ hero.jpg') no-repeat center center/cover;
+    background: url('/PUBLIC/IMAGES/MAIN.jpg') no-repeat center center/cover;
     color: white;
     text-align: center;
     padding: 5rem 1rem;
@@ -48,7 +47,6 @@ nav ul li a {
 .hero p {
     font-size: 1.5rem;
 }
-
 
 .blog-articles {
     display: grid;
@@ -95,7 +93,6 @@ nav ul li a {
     background: #555;
 }
 
-
 footer {
     background-color: #333;
     color: #fff;
@@ -113,4 +110,57 @@ footer {
 .footer-links a, .footer-social a {
     color: #fff;
     text-decoration: none;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .blog-articles {
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+
+    .blog-articles article {
+        margin: 0 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 3rem 1rem;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .read-more {
+        padding: 0.3rem 0.8rem;
+    }
 }

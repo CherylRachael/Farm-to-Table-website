@@ -82,7 +82,6 @@ nav ul li a {
     box-sizing: border-box;
 }
 
-
 .feature-item img, .recipe-item img {
     width: 100%;
     height: 200px; 
@@ -93,6 +92,7 @@ nav ul li a {
 .feature-item a {
     color: #333;
 }
+
 .cta-button {
     margin-top: 20px; 
     padding: 10px 20px;
@@ -107,8 +107,6 @@ nav ul li a {
 .cta-button:hover {
     background-color: #e0a200;
 }
-
-
 
 footer {
     background-color: #333;
@@ -127,4 +125,65 @@ footer {
 .footer-links a, .footer-social a {
     color: #fff;
     text-decoration: none;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .feature-list, .recipe-list, .testimonial-list {
+        flex-direction: column;
+    }
+
+    .feature-item, .recipe-item, .testimonial-item {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .features h2, .featured-recipes h2, .testimonials h2, .newsletter h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .cta-button {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .features, .featured-recipes, .testimonials, .newsletter {
+        padding: 30px 10px;
+    }
+
+    .features h2, .featured-recipes h2, .testimonials h2, .newsletter h2 {
+        font-size: 24px;
+    }
 }
